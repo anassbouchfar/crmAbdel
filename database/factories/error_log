@@ -1,0 +1,60 @@
+[09-Jun-2020 02:41:00 America/New_York] PHP Notice:  Undefined variable: factory in /home/bakctflh/public_html/database/factories/UserFactory.php on line 20
+[09-Jun-2020 02:41:00 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function define() on null in /home/bakctflh/public_html/database/factories/UserFactory.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/bakctflh/public_html/database/factories/UserFactory.php on line 20
+[09-Jun-2020 02:41:00 America/New_York] PHP Notice:  Undefined variable: factory in /home/bakctflh/public_html/database/factories/UserFactory.php on line 20
+[09-Jun-2020 02:41:00 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function define() on null in /home/bakctflh/public_html/database/factories/UserFactory.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/bakctflh/public_html/database/factories/UserFactory.php on line 20
+[09-Jun-2020 02:44:10 America/New_York] PHP Notice:  Undefined variable: factory in /home/bakctflh/public_html/database/factories/UserFactory.php on line 20
+[09-Jun-2020 02:44:10 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function define() on null in /home/bakctflh/public_html/database/factories/UserFactory.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/bakctflh/public_html/database/factories/UserFactory.php on line 20
+[09-Jun-2020 02:44:10 America/New_York] PHP Notice:  Undefined variable: factory in /home/bakctflh/public_html/database/factories/UserFactory.php on line 20
+[09-Jun-2020 02:44:10 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function define() on null in /home/bakctflh/public_html/database/factories/UserFactory.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/bakctflh/public_html/database/factories/UserFactory.php on line 20
+[09-Jun-2020 02:47:03 America/New_York] PHP Notice:  Undefined variable: factory in /home/bakctflh/public_html/database/factories/UserFactory.php on line 20
+[09-Jun-2020 02:47:03 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function define() on null in /home/bakctflh/public_html/database/factories/UserFactory.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/bakctflh/public_html/database/factories/UserFactory.php on line 20
+[09-Jun-2020 02:47:05 America/New_York] PHP Notice:  Undefined variable: factory in /home/bakctflh/public_html/database/factories/UserFactory.php on line 20
+[09-Jun-2020 02:47:05 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function define() on null in /home/bakctflh/public_html/database/factories/UserFactory.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/bakctflh/public_html/database/factories/UserFactory.php on line 20
+[09-Jun-2020 02:49:44 America/New_York] PHP Notice:  Undefined variable: factory in /home/bakctflh/public_html/database/factories/UserFactory.php on line 20
+[09-Jun-2020 02:49:44 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function define() on null in /home/bakctflh/public_html/database/factories/UserFactory.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/bakctflh/public_html/database/factories/UserFactory.php on line 20
+[09-Jun-2020 02:49:45 America/New_York] PHP Notice:  Undefined variable: factory in /home/bakctflh/public_html/database/factories/UserFactory.php on line 20
+[09-Jun-2020 02:49:45 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function define() on null in /home/bakctflh/public_html/database/factories/UserFactory.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/bakctflh/public_html/database/factories/UserFactory.php on line 20
+[09-Jun-2020 02:52:34 America/New_York] PHP Notice:  Undefined variable: factory in /home/bakctflh/public_html/database/factories/UserFactory.php on line 20
+[09-Jun-2020 02:52:34 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function define() on null in /home/bakctflh/public_html/database/factories/UserFactory.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/bakctflh/public_html/database/factories/UserFactory.php on line 20
+[09-Jun-2020 02:52:35 America/New_York] PHP Notice:  Undefined variable: factory in /home/bakctflh/public_html/database/factories/UserFactory.php on line 20
+[09-Jun-2020 02:52:35 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function define() on null in /home/bakctflh/public_html/database/factories/UserFactory.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/bakctflh/public_html/database/factories/UserFactory.php on line 20
+[09-Jun-2020 03:00:24 America/New_York] PHP Notice:  Undefined variable: factory in /home/bakctflh/public_html/database/factories/UserFactory.php on line 20
+[09-Jun-2020 03:00:24 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function define() on null in /home/bakctflh/public_html/database/factories/UserFactory.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/bakctflh/public_html/database/factories/UserFactory.php on line 20
+[09-Jun-2020 03:00:25 America/New_York] PHP Notice:  Undefined variable: factory in /home/bakctflh/public_html/database/factories/UserFactory.php on line 20
+[09-Jun-2020 03:00:25 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function define() on null in /home/bakctflh/public_html/database/factories/UserFactory.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/bakctflh/public_html/database/factories/UserFactory.php on line 20
