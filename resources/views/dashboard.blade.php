@@ -1,4 +1,17 @@
 @extends('herite')
+
+
+@section('scripts')
+    <script src="{{asset('audio/recorder.js')}}"></script>
+		<script src="{{asset('audio/Fr.voice.js')}}"></script>
+		<script src="{{asset('audio/app.js')}}"></script>
+
+
+
+@endsection
+
+
+
 @section('statistique')
 <?php
  
@@ -314,9 +327,9 @@
                                       </td>
                                       <script>
 
-                                        $('.popover-dismiss').popover({
+                                      /*  $('.popover-dismiss').popover({
                                           trigger: 'focus'
-                                        })
+                                        })*/
                                                                                   </script>
                                       <td> {{$client->nom}} </td>
                                       <td> {{$client->prénom}} </td>
@@ -429,6 +442,19 @@
                                                 <label for="message-text" class="col-form-label"><strong> Nouveau Commentaire</strong></label>
                                                   <textarea name='commentaire' class="form-control" id="message-text"></textarea>
                                                 </div>
+                                                <div class="audioContainer{{$client->id}}">
+                                                  @foreach($client->audios as $audio)
+                                                  <audio controls id="audio" src="/play/{{$audio->id}}" style="display: block;margin:10px;margin-left:0px"></audio> 
+                                                  @endforeach
+                                                </div>  
+                                                  <a class="btn btn-primary recordButton" id="record" >Record</a>
+                                                  <a disabled class="btn btn-warning  one" id="pause">Pause</a>
+                                                  <a class="btn btn-success one" id="save" value="{{$client->id}}">Upload to Server</a>
+                                                
+                                      
+                                               <!-- <canvas style="display: block;" id="level" height="200" width="500"></canvas>-->
+
+
                                               </div>
                                               <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -734,39 +760,7 @@
 
 
                                   </tr>   
-                                  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
-                                  <script>
-                                    $(()=>{
-                                      $(".addChild").click(()=>{
-                                        str =' <div class="form-row">\
-                                                                                    <div class="form-group col-md-6">\
-                                                                                      <label for="inputEmail4">nom</label>\
-                                                                                      <input name="iban"type="" class="form-control" id="inputEmail4" placeholder="nom" >\
-                                                                                    </div>\
-                                                                                    <div class="form-group col-md-6">\
-                                                                                      <label for="inputPassword4">prénom</label>\
-                                                                                      <input name="ss"type="" class="form-control" id="inputEmail4" placeholder="nom" >\
-                                                                                    </div>\
-                                                                                  </div>\
-                                                                                  <div class="form-row">\
-                                                                                    <div class="form-group col-md-6">\
-                                                                                      <label for="inputEmail4">IBAN</label>\
-                                                                                      <input name="iban"type="" class="form-control" id="inputEmail4" placeholder="nom" >\
-                                                                                    </div>\
-                                                                                    <div class="form-group col-md-6">\
-                                                                                      <label for="inputPassword4">Sécurité Sociale</label>\
-                                                                                      <input name="ss"type="" class="form-control" id="inputEmail4" placeholder="nom" >\
-                                                                                    </div>\
-                                                                                    <div class="form-group col-md-6">\
-                                                                                    <label for="inputPassword4">Régime</label>\
-                                                                                    <input name="ss"type="" class="form-control" id="inputEmail4" placeholder="nom" >\
-                                                                                  </div>\
-                                                                                  </div>'
-                                                                                  
-                                        $(".contChilds").append(str)
-                                      })
-                                    })
-                                  </script>
+                           
                                   
                                   
                                  
@@ -774,3 +768,5 @@
                                       
 
 @endsection
+
+

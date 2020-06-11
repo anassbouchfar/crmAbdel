@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
+
+use App\Audio;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use Carbon\Carbon;
@@ -127,7 +129,9 @@ class HomeController extends Controller
             $tc=0;
         }
         
-        $x= \App\Client::all();
+        $x= \App\Client::with('audios')->get();
+
+        //dd($x[0]->audios);
         $stack = array();
         
         foreach($x as $client)
@@ -777,5 +781,22 @@ class HomeController extends Controller
         $client->save();
         return redirect('/dashboard');
         
+    }
+
+
+    public function add_audio(Request $request){
+          $file = $request->audio;
+          $audio = file_get_contents($file->getRealPath());
+          $newAudio= Audio::create(['client_id'=>$request->client_id,'audio'=>$audio]);;
+      
+          return response()->json(['data'=>$newAudio->id]);
+    }
+
+    public function play($id){
+       $audio  = Db::select('select LENGTH("audio") as len,audio as audio from audio where id = '.$id);
+       $size=$audio[0]->len;
+       header("Content-Length: {{$size}}");
+      header("Content-Type: audio/wav");
+      echo $audio[0]->audio;
     }
 }

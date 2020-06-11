@@ -1,12 +1,11 @@
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-  <script>
+<meta name="csrf-token" content="{{ csrf_token() }}">
 
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
-  </script>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+
+ 
     <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
     <!-- endinject -->
@@ -16,6 +15,7 @@ $(function () {
     <!-- endinject -->
     <!-- Layout styles -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <!-- End layout styles -->
     <link rel="shortcut icon" href="assets/images/favicon.png" />
     <meta charset="utf-8">
@@ -35,7 +35,6 @@ $(function () {
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
    
 </head>
 <body>
@@ -151,14 +150,7 @@ $(function () {
             
             
         
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
-    <script>
-
-      $(function () {
-        $('[data-toggle="tooltip"]').tooltip()
-      })
-        </script>
-       
+       @yield('scripts')
   </body>
 
 </html>

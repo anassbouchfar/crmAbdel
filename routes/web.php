@@ -1,5 +1,6 @@
 <?php
 
+use App\Audio;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
@@ -37,3 +38,11 @@ Route::get('/add_commentaire','HomeController@addcommentaire')->name('add_commen
 Route::get('/statistique', 'HomeController@statistique')->name('statistique');
 
 Route::get('/add_associe', 'HomeController@add_associe')->name('add_associe');
+
+Route::post('/add_audio','HomeController@add_audio')->name('add_audio');
+Route::get('/play/{id}','HomeController@play')->name('play');
+
+Route::get('/test',function(){
+    $audio  = Audio::find(6);
+    return view('test',['audio'=>$audio]);
+});

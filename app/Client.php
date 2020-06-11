@@ -16,4 +16,8 @@ class Client extends Model
     {
         return $this->hasMany('App\Commentaire');
     }
+
+    public function audios(){
+        return $this->hasMany('App\Audio');
+    }
 }
