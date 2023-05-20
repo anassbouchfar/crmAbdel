@@ -24,7 +24,7 @@ Route::get('/index', function () {
 });
 
 Auth::routes();
-
+//test
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/dashboard', 'HomeController@dashboard')->name('dashboard');
 Route::get('/filtrer', 'HomeController@filtrer')->name('filtrer');
